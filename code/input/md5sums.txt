@@ -1,0 +1,2 @@
+24bfa5f315c5fcd3772e53c93d1add9e  hg19_ac_large_intestine_embryo_ENCFF906VKA.bed
+4e80ff7a1f3e94cdd5bd3d623378acd2  hg19_open_large_intestine_embryo_ENCFF276FKY.bed
