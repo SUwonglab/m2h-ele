@@ -8,6 +8,6 @@ please kindly cite the following research article:
 
 > Zhu, X., Ma, S. & Wong, W.H.
 > Genetic effects of sequence-conserved enhancer-like elements on human complex traits.
-> *bioRxiv* (2022).
+> *bioRxiv* (2022) <https://doi.org/10.1101/2022.08.19.504589>.
 
 Correspondence should be addressed to X.Z. (`xiangzhu[at]psu.edu`) and W.H.W (`whwong[at]stanford.edu`).
