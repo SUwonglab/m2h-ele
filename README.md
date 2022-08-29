@@ -19,12 +19,12 @@ The MD5 hash of each file is provided to help users verify the file integrity.
 
 The `omnibus_bed.zip` file provides the following files.
 
-| Name                       | Description      |
-|----------------------------|------------------|
-| `merge_human.bed`          | Omnibus AELEs    |
-| `merge_human_mouse_01.bed` | LC omnibus AELEs |
-| `merge_human_mouse_05.bed` | MC omnibus AELEs |
-| `merge_human_mouse_09.bed` | HC omnibus AELEs |
+| Name                       | Description                             |
+|----------------------------|-----------------------------------------|
+| `merge_human.bed`          | Omnibus AELEs                           |
+| `merge_human_mouse_01.bed` | Lowly-conserved (LC) omnibus AELEs      |
+| `merge_human_mouse_05.bed` | Moderately-conserved (MC) omnibus AELEs |
+| `merge_human_mouse_09.bed` | Highly-conserved (HC) omnibus AELEs     |
 
 Each row of each BED file in `omnibus_bed.zip` defines an omnibus AELE,
 indicated by the chromosome, start and end positions.
