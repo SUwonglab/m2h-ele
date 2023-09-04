@@ -1,6 +1,6 @@
-# Sequence-conserved Active Enhancer-like Elements
+# Sequence-conserved Enhancer-like Elements
 
-The present repository contains the sequence-conserved active enhancer-like elements (AELEs)
+The present repository contains the sequence-conserved enhancer-like elements (ELEs)
 identified in 106 human tissues and cell types and the corresponding source codes. 
 
 If you find any part of this repository useful for your work,
@@ -21,12 +21,12 @@ The `omnibus_bed.zip` file provides the following files.
 
 | Name                       | Description                             |
 |----------------------------|-----------------------------------------|
-| `merge_human.bed`          | Omnibus AELEs                           |
-| `merge_human_mouse_01.bed` | Lowly-conserved (LC) omnibus AELEs      |
-| `merge_human_mouse_05.bed` | Moderately-conserved (MC) omnibus AELEs |
-| `merge_human_mouse_09.bed` | Highly-conserved (HC) omnibus AELEs     |
+| `merge_human.bed`          | Omnibus ELEs                           |
+| `merge_human_mouse_01.bed` | Lowly-conserved (LC) omnibus ELEs      |
+| `merge_human_mouse_05.bed` | Moderately-conserved (MC) omnibus ELEs |
+| `merge_human_mouse_09.bed` | Highly-conserved (HC) omnibus ELEs     |
 
-Each row of each BED file in `omnibus_bed.zip` defines an omnibus AELE,
+Each row of each BED file in `omnibus_bed.zip` defines an omnibus ELE,
 indicated by the chromosome, start and end positions.
 
 ```bash
@@ -38,14 +38,14 @@ The `context_specific_bed.zip` file provides the following files.
 
 | Name                 | Description               |
 |----------------------|---------------------------|
-| `human.bed`          | Context-specific AELEs    |
-| `human_mouse_01.bed` | LC context-specific AELEs |
-| `human_mouse_05.bed` | MC context-specific AELEs |
-| `human_mouse_09.bed` | HC context-specific AELEs |
+| `human.bed`          | Context-specific ELEs    |
+| `human_mouse_01.bed` | LC context-specific ELEs |
+| `human_mouse_05.bed` | MC context-specific ELEs |
+| `human_mouse_09.bed` | HC context-specific ELEs |
 
 Each row of each BED file in `context_specific_bed.zip` defines
-an AELE together with the tissue or cell type from which it is derived.
-For example, `chr1:1167581-1168822` shown below is a HC context-specific AELE derived from the A549 cell line.
+an ELE together with the tissue or cell type from which it is derived.
+For example, `chr1:1167581-1168822` shown below is a HC context-specific ELE derived from the A549 cell line.
 
 ```bash
 $ head -n 1 context_specific_bed/human_mouse_09.bed
@@ -73,15 +73,15 @@ the BED files of H3K27ac and chromatin accessibility identified in embryonic lar
 
 The [`code/example.sh`](code/example.sh) takes the BED files
 of human H3K27ac and chromatin accessibility peaks as input,
-and produces the AELEs with sequence conservation (LC, MC, HC) in the same context.
+and produces the ELEs with sequence conservation (LC, MC, HC) in the same context.
 For example, the [`code/output`](code/output) folder provides the output
-sequence-conserved AELEs for human embryonic large intestine.
+sequence-conserved ELEs for human embryonic large intestine.
 
 | Name                                                   | Description               |
 |--------------------------------------------------------|---------------------------|
-| `hg19_mm10_01_hg19_large_intestine_embryo_ac_open.bed` | LC context-specific AELEs |
-| `hg19_mm10_05_hg19_large_intestine_embryo_ac_open.bed` | MC context-specific AELEs |
-| `hg19_mm10_09_hg19_large_intestine_embryo_ac_open.bed` | HC context-specific AELEs |
+| `hg19_mm10_01_hg19_large_intestine_embryo_ac_open.bed` | LC context-specific ELEs |
+| `hg19_mm10_05_hg19_large_intestine_embryo_ac_open.bed` | MC context-specific ELEs |
+| `hg19_mm10_09_hg19_large_intestine_embryo_ac_open.bed` | HC context-specific ELEs |
 
 The [`code/intermediate`](code/intermediate) folder consists of intermediate files
 that are produced by [`code/example.sh`](code/example.sh). 
